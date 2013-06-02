@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/About.qml</file>
+        <file>qml/BasicDataPage.qml</file>
+        <file>qml/BasicListPage.qml</file>
+        <file>qml/BasicPage.qml</file>
+        <file>qml/Constants.js</file>
+        <file>qml/DeviceBatteryInfo.qml</file>
+        <file>qml/DeviceInfo.qml</file>
+        <file>qml/Logic.js</file>
+        <file>qml/main.qml</file>
+        <file>qml/MainListPage.qml</file>
+        <file>qml/Helper.js</file>
+        <file>qml/DeviceUnitInfo.qml</file>
+        <file>qml/ConfigurationInfo.qml</file>
+        <file>qml/ConfigurationSyncInfo.qml</file>
+        <file>qml/DeviceScreenInfo.qml</file>
+        <file>qml/ConfigurationNetworkInfo.qml</file>
+        <file>qml/DeviceCpuInfo.qml</file>
+        <file>qml/DeviceSensorInfo.qml</file>
+        <file>qml/ConfigurationVersionInfo.qml</file>
+        <file>qml/BenchmarkPage.qml</file>
+        <file>qml/Benchmark.js</file>
+        <file>qml/BenchmarkItem.qml</file>
+        <file>qml/FileBrowserPage.qml</file>
+        <file>qml/MiscellaneousPage.qml</file>
+        <file>qml/ConfigurationQmlInfo.qml</file>
+        <file>qml/ConfigurationFontInfo.qml</file>
+        <file>qml/ConfigurationServiceInfo.qml</file>
+        <file>qml/DataDelegate.qml</file>
+        <file>qml/DataSectionDelegate.qml</file>
+        <file>qml/MiscUploadPage.qml</file>
+        <file>qml/Pastebin.js</file>
+    </qresource>
+</RCC>

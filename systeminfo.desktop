@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Name=systeminfo
+Exec=/usr/bin/invoker --single-instance --type=d --splash /opt/systeminfo/splash.png /opt/systeminfo/bin/systeminfo
+#Icon=/usr/share/icons/hicolor/scalable/apps/systeminfo.svg
+Icon=/usr/share/icons/hicolor/80x80/apps/systeminfo80.png
+X-Window-Icon=
+X-HildonDesk-ShowInToolbar=true
+X-Osso-Type=application/x-executable
