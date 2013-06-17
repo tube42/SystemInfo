@@ -2,7 +2,7 @@ import QtQuick 1.1
 
 Item {
     id: listItem
-    height: theme.listItemHeight
+    height: theme_.listItemHeight
     width: parent.width
 
     Row {
@@ -16,18 +16,18 @@ Item {
             Text {
                 id: mainText
                 text: model.text
-                font.family: theme.titleFontFamily
-                font.pixelSize: theme.titleFontSize
-                color: theme.titleFontColor
+                font.family: theme_.titleFontFamily
+                font.pixelSize: theme_.titleFontSize
+                color: theme_.titleFontColor
                 font.bold: true;
             }
 
             Text {
                 id: subText
                 text: desc
-                font.family: theme.subtitleFontFamily
-                font.pixelSize: theme.subtitleFontSize
-                color: theme.subtitleFontColor
+                font.family: theme_.subtitleFontFamily
+                font.pixelSize: theme_.subtitleFontSize
+                color: theme_.subtitleFontColor
                 visible: text != ""
 
                 width: parent.width

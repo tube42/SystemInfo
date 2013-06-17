@@ -23,9 +23,9 @@ BasicPage {
             textFormat: Text.RichText
             width: parent.width
 
-            font.pixelSize: theme.itemFontSize
-            font.family: theme.itemFontFamily
-            color: theme.itemFontColor
+            font.pixelSize: theme_.itemFontSize
+            font.family: theme_.itemFontFamily
+            color: theme_.itemFontColor
 
             text:Constants.APP_ABOUT_TEXT
             onLinkActivated: Qt.openUrlExternally(link)

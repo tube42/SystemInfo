@@ -28,15 +28,17 @@ BasicPage {
         id: serviceSectionDelegate
 
         Rectangle {
-            height: 2 * theme.sectionFontSize + theme.defaultMargin
+            height: 2 * theme_.sectionFontSize + theme_.defaultMargin
             width: parent.width
-            color: theme.sectionAreaColor
+            color: theme_.sectionAreaColor
             Text {
-                anchors.centerIn:  parent
-                font.family: theme.sectionFontFamily
-                font.pixelSize: theme.sectionFontSize
+                // anchors.centerIn:  parent
+                anchors { verticalCenter: parent.verticalCenter; left: parent.left; right: parent.right; margins: 12 }
+
+                font.family: theme_.sectionFontFamily
+                font.pixelSize: theme_.sectionFontSize
                 font.bold: true
-                color: theme.sectionFontColor
+                color: theme_.sectionFontColor
                 text: section
 
                 width: parent.width
@@ -52,25 +54,25 @@ BasicPage {
 
         Column {
             width: parent.width
-            height: childrenRect.height + theme.defaultMargin  * 2
-            spacing: theme.defaultMargin / 2
+            height: childrenRect.height + theme_.defaultMargin  * 2
+            spacing: theme_.defaultMargin / 2
 
-            Item { width: 1; height:  theme.defaultMargin / 2 } // space fix
+            Item { width: 1; height:  theme_.defaultMargin / 2 } // space fix
 
             Text {
                 text: serviceName
-                font.family: theme.titleFontFamily
-                font.pixelSize: theme.titleFontSize
-                color: theme.titleFontColor
+                font.family: theme_.titleFontFamily
+                font.pixelSize: theme_.titleFontSize
+                color: theme_.titleFontColor
                 font.bold: true;
             }
 
             Text {
                 id: subText
                 text: "Version " + majorVersion + "." + minorVersion
-                font.family: theme.subtitleFontFamily
-                font.pixelSize: theme.subtitleFontSize
-                color: theme.subtitleFontColor
+                font.family: theme_.subtitleFontFamily
+                font.pixelSize: theme_.subtitleFontSize
+                color: theme_.subtitleFontColor
             }
         }
     }

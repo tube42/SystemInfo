@@ -7,7 +7,7 @@ import SystemInfo 1.0
 PageStackWindow {
     id: pagestack
 
-    UserTheme { id: theme }
+    UserTheme { id: theme_ }
     PlatformHelper { id: platform }
 
     initialPage: MainListPage { }

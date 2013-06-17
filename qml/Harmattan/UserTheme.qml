@@ -45,7 +45,7 @@ Item {
     // lists
     property int listItemHeight: 98
     property string listBorderImage: "image://theme/meegotouch-list-background-pressed-center"
-    property string listArrowImage:  "image://theme/icon-m-common-drilldown-arrow" + (theme.inverted ? "-inverse" : "")
+    property string listArrowImage:  "image://theme/icon-m-common-drilldown-arrow" + (theme_.inverted ? "-inverse" : "")
 
     property string listBorderImage_inverted: listBorderImage + "-inverse"
     property string listArrowImage_inverted:  listArrowImage + "-inverse"

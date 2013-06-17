@@ -24,7 +24,7 @@ Makefile
 *.changes
 obj/
 moc/
-qtc_packaging/
+debian
 
 
 # yes, stupid me

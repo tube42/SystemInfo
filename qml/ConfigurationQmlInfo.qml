@@ -12,7 +12,7 @@ BasicPage {
         visible:  page.state != "ready"
         width: parent.width
         anchors.verticalCenter: parent.verticalCenter
-        spacing: theme.defaultMargin
+        spacing: theme_.defaultMargin
 
         BusyIndicator {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -22,9 +22,9 @@ BasicPage {
         Text {
             text: "Please wait..."
             anchors.horizontalCenter: parent.horizontalCenter
-            font.family: theme.titleFontFamily
-            font.pixelSize: theme.titleFontSize
-            color: theme.titleFontColor
+            font.family: theme_.titleFontFamily
+            font.pixelSize: theme_.titleFontSize
+            color: theme_.titleFontColor
         }
     }
 
@@ -35,7 +35,7 @@ BasicPage {
     ListView {
         id: listView
         anchors.fill: parent.canvas
-        anchors.topMargin: theme.defaultMargin
+        anchors.topMargin: theme_.defaultMargin
         model: dataModel
         delegate: dataDelegate
         visible:  page.state == "ready"
@@ -51,26 +51,26 @@ BasicPage {
 
         Column {
             anchors{ right: parent.right; rightMargin: 5; left: parent.left; leftMargin: 5 }
-            height: 20 + theme.titleFontSize + 2 * theme.subtitleFontSize
+            height: 42 + theme_.titleFontSize + 2 * theme_.subtitleFontSize
 
             Label {
                 text: lib
-                font.family: theme.titleFontFamily
-                font.pixelSize: theme.titleFontSize
-                color: theme.titleFontColor
+                font.family: theme_.titleFontFamily
+                font.pixelSize: theme_.titleFontSize
+                color: theme_.titleFontColor
                 font.bold: true;
             }
 
             Label {
                 text: "Present: " + present
-                font.family: theme.subtitleFontFamily
-                font.pixelSize: theme.subtitleFontSize
+                font.family: theme_.subtitleFontFamily
+                font.pixelSize: theme_.subtitleFontSize
                 color: "green"
             }
             Label {
                 text: "Absent: " + absent
-                font.family: theme.subtitleFontFamily
-                font.pixelSize: theme.subtitleFontSize
+                font.family: theme_.subtitleFontFamily
+                font.pixelSize: theme_.subtitleFontSize
                 color: "red"
             }
         }

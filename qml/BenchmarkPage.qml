@@ -19,15 +19,26 @@ BasicPage {
     Item {
         anchors.fill: parent.canvas
 
+        Button {
+            id: button
+            text: "Run benchmark"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.margins: 24
+            onClicked: startBenchmark();
+            enabled: !working
+        }
+
         Text {
             id: info
-            text: "Please close all active apps before running the benchmark! Note also that this function is still UNDER DEVELOPMENT..."
-            font.family: theme.subtitleFontFamily
-            font.pixelSize: theme.subtitleFontSize
-            color: theme.subtitleFontColor
+            text: "This \"benchmark\" is just a quick and dirty test to check if performance has changed significantly after a firmware update. Please close all active apps before running the benchmark!"
+            font.family: theme_.subtitleFontFamily
+            font.pixelSize: theme_.subtitleFontSize
+            color: theme_.subtitleFontColor
 
             width: parent.width
-            anchors.bottom: parent.bottom
+            anchors.bottom: button.top
+            anchors.margins: 48
             maximumLineCount: 3
             wrapMode: Text.Wrap
 
@@ -35,15 +46,8 @@ BasicPage {
 
         Column {
             anchors.fill:  parent
-            spacing: theme.defaultMargin
+            spacing: theme_.defaultMargin
 
-            Button {
-                id: button
-                text: "Run benchmark"
-                anchors.horizontalCenter: parent.horizontalCenter
-                onClicked: startBenchmark();
-                enabled: !working
-            }
 
             BenchmarkItem { id: item1; text:  "Native int"; value: score1 }
             BenchmarkItem { id: item2; text:  "Native FP"; value: score2 }

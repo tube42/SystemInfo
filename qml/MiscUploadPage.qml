@@ -111,12 +111,12 @@ BasicPage {
         Column {
             id: cols
             width: parent.width
-            spacing: theme.defaultMargin
+            spacing: theme_.defaultMargin
             visible: ! page.working
 
             Label {
                 text: "Upload name"
-                color: theme.itemFontColor
+                color: theme_.itemFontColor
             }
             TextField {
                 id: title
@@ -125,7 +125,7 @@ BasicPage {
             }
 
             Label {
-                color: theme.itemFontColor
+                color: theme_.itemFontColor
                 text: "Items to include"
             }
 
@@ -161,7 +161,7 @@ BasicPage {
             }
 
             Label {
-                color: theme.itemFontColor
+                color: theme_.itemFontColor
                 text: "*: Included lines"
             }
 
@@ -189,7 +189,7 @@ BasicPage {
             }
 
             Label {
-                color: theme.itemFontColor
+                color: theme_.itemFontColor
                 text: "Access your paste"
             }
 
@@ -210,9 +210,9 @@ BasicPage {
             Text {
                 id: info
                 text: "Please note that your logs can contain sensetive information. Once on pastebin, your logs can be seen by others!"
-                font.family: theme.subtitleFontFamily
-                font.pixelSize: theme.subtitleFontSize
-                color: theme.subtitleFontColor
+                font.family: theme_.subtitleFontFamily
+                font.pixelSize: theme_.subtitleFontSize
+                color: theme_.subtitleFontColor
                 width: parent.width
                 maximumLineCount: 3
                 wrapMode: Text.Wrap

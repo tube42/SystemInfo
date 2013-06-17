@@ -90,7 +90,14 @@ OTHER_FILES += \
     qml/DataSectionDelegate.qml \
     qml/MiscellaneousPage.qml \
     qml/MiscUploadPage.qml \
-    qml/Pastebin.js
+    qml/Pastebin.js \
+    qtc_packaging/debian_harmattan/rules \
+    qtc_packaging/debian_harmattan/README \
+    qtc_packaging/debian_harmattan/manifest.aegis \
+    qtc_packaging/debian_harmattan/copyright \
+    qtc_packaging/debian_harmattan/control \
+    qtc_packaging/debian_harmattan/compat \
+    qtc_packaging/debian_harmattan/changelog
 
 RESOURCES += \
     res.qrc \

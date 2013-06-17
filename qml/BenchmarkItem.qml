@@ -11,24 +11,24 @@ Grid {
 
     anchors.left: parent.left
     anchors.right: parent.right
-//        height: Math.max(theme.itemFontSize * 2, indicator.height) * 1.1
+//        height: Math.max(theme_.itemFontSize * 2, indicator.height) * 1.1
 
-    spacing: theme.defaultMargin
+    spacing: theme_.defaultMargin
 
     Text {
         id: text
         text : ""
-        font.family: theme.titleFontFamily
-        font.pixelSize: theme.titleFontSize
-        color : theme.titleFontColor
+        font.family: theme_.titleFontFamily
+        font.pixelSize: theme_.titleFontSize
+        color : theme_.titleFontColor
     }
 
     Text {
         id: value
         text : ""
-        font.family: theme.titleFontFamily
-        font.pixelSize: theme.titleFontSize
-        color : theme.itemFontColor
+        font.family: theme_.titleFontFamily
+        font.pixelSize: theme_.titleFontSize
+        color : theme_.itemFontColor
     }
 }
 

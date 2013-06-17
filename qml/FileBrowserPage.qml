@@ -36,7 +36,7 @@ BasicPage {
         model: fsModel
         delegate: Rectangle {
             width: parent.width
-            height: theme.listItemHeight
+            height: theme_.listItemHeight
 
             BorderImage {
                 id: background
@@ -44,12 +44,12 @@ BasicPage {
 //                    anchors.leftMargin: -container.anchors.leftMargin
 //                    anchors.rightMargin: -container.anchors.rightMargin
                 visible: mouseArea.pressed
-                source: theme.listBorderImage
+                source: theme_.listBorderImage
             }
 
             Image {
                 id: theArrow
-                source: theme.listArrowImage
+                source: theme_.listArrowImage
                 anchors.right: parent.right;
                 anchors.verticalCenter: parent.verticalCenter
                 visible: model.hasModelChildren
@@ -68,17 +68,17 @@ BasicPage {
 
                 Text {
                     text: fileName
-                    font.family: theme.titleFontFamily
-                    font.pixelSize: theme.titleFontSize
+                    font.family: theme_.titleFontFamily
+                    font.pixelSize: theme_.titleFontSize
                     font.bold:  true
-                    color: theme.titleFontColor
+                    color: theme_.titleFontColor
                 }
                 /*
                 Text {
                     text: fsModel.size + ", " + fsModel.type
-                    font.family: theme.itemFontFamily
-                    font.pixelSize: theme.itemFontSize
-                    color: theme.itemFontColor
+                    font.family: theme_.itemFontFamily
+                    font.pixelSize: theme_.itemFontSize
+                    color: theme_.itemFontColor
                 } */
             }
         }

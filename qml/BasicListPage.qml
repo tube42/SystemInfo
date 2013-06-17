@@ -19,7 +19,7 @@ BasicPage {
 
         delegate:  Item {
             id: listItem
-            height: theme.listItemHeight
+            height: theme_.listItemHeight
             width: parent.width
 
             BorderImage {
@@ -29,7 +29,7 @@ BasicPage {
                 anchors.leftMargin: -container.anchors.leftMargin
                 anchors.rightMargin: -container.anchors.rightMargin
                 visible: mouseArea.pressed
-                source: theme.listBorderImage
+                source: theme_.listBorderImage
             }
 
             Row {
@@ -61,7 +61,7 @@ BasicPage {
 
             Image {
                 id: theArrow
-                source: theme.listArrowImage
+                source: theme_.listArrowImage
                 anchors.right: parent.right;
                 anchors.verticalCenter: parent.verticalCenter
             }

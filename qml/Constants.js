@@ -1,19 +1,19 @@
 
-var APP_VERSION = "0.5.1"
+var APP_VERSION = "0.5.2"
 var APP_ABOUT_LINK = ""
 var APP_ABOUT_TEXT =  "System Info (beta release)" +
     "<p>Version " + APP_VERSION + "\n" +
-    "<p>by TUBE42 - <a href=\"mailto:av@tube42.se\">av@tube42.se</a>" +
+    "<p>by TUBE42 - <a href=\"mailto:av@tube42.se\">av@tube42.se</a>, " +
+    "<a href=\"https://twitter.com/tube42\">@tube42</a> " +
     "<p><br>" +
     "<p>SystemInfo is a tiny utility for examining various aspects of your MeeGo/Harmattan device. " +
     "It is primarily used by developers and modders, but can also be of use to normal users " +
     "who experience problems with their device or want to know more about MeeGo and Harmattan."+
     "<p><br>" +
-    "<p>This app is written in QML (Qt Modelling Language) and has been published at " +
-    "<a href=\"http://projects.developer.nokia.com/SystemInfo\">Nokia Developer Forum</a>"+
-    " under the GPLv3 license."+
-    "<p>Please note that this software is at an early development stage and will be updated with more features in near future. " +
-    "<p>Please contact the author via email to suggest improvements, request features and report bugs."
+    "<p>The QML source code is available at " +
+    "<a href=\"https://github.com/tube42/SystemInfo\">GitHub</a>"+
+    " under the GPLv3 license. " +
+    "Please contact the author via <a href=\"https://twitter.com/tube42\">twitter</a> to suggest improvements, request features and report bugs."
 
 // -----------------------------------------
 

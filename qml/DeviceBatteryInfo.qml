@@ -8,13 +8,20 @@ BasicDataPage {
     id: phoneInfo
     title: "Battery Info"
 
+    property bool active: false
+
     BatteryInfo {
         id: batInfo
 
-        monitorCurrentFlowChanges: true
-        monitorRemainingCapacityChanges: true
-        monitorRemainingCapacityPercentChanges: true
-        monitorRemainingChargingTimeChanges: true
+        monitorCurrentFlowChanges: phoneInfo.active
+        monitorRemainingCapacityChanges: phoneInfo.active
+        monitorRemainingCapacityPercentChanges: phoneInfo.active
+        monitorRemainingChargingTimeChanges: phoneInfo.active
+
+        monitorChargerTypeChanges: phoneInfo.active
+        monitorChargingStateChanges : phoneInfo.active
+        monitorNominalCapacityChanges : phoneInfo.active
+        // monitorRemainingCapacityBarsChanges : phoneInfo.active
 
 
         onCurrentFlowChanged: update();
@@ -36,8 +43,7 @@ BasicDataPage {
         onPowerStateChanged: update();
     }
 
-    Component.onCompleted: update();
-
+    // ------------------------------------------
     function update() {
         clear();
 
@@ -45,20 +51,32 @@ BasicDataPage {
         append("Battery status", Helper.select(Helper.BATTERY_STATUS_NAMES, devinfo.batteryStatus));
         append("Power state", Helper.select(Helper.POWER_STATE_NAMES, devinfo.currentPowerState));
 
+        append("Battery capacity (current/max)",
+               "" + batInfo.remainingCapacity + "/" + batInfo.nominalCapacity  +" mAh");
+
+//        append("Battery nominal capacity", "" + batInfo.nominalCapacity  +" mAh");
+//        append("Battery remaining capacity", "" + batInfo.remainingCapacity  +" mAh");
 
 
-
-        append("Battery nominal capacity", "" + batInfo.nominalCapacity  +" mAh");
-        append("Battery remaining capacity", "" + batInfo.remainingCapacity  +" mAh");
-
-        if(batInfo.remainingChargingTime > 0)
+        var rct = batInfo.remainingChargingTime;
+        if(rct === 0)
+            append("Remaining charge time", "already fully charged!");
+//        else if(rct === -1)
+//            append("Remaining charge time", "no battery found :(");
+        else if(rct > 0)
             append("Remaining charge time", "" + batInfo.remainingChargingTime  +" s");
 
         append("Current flow", "" + batInfo.currentFlow +" mA");
         append("Voltage", "" + batInfo.voltage +" mV");
-
-
     }
 
 
+    onStatusChanged: {
+        // console.log("STATUS=", status);
+        active = (status === PageStatus.Active);
+        update();
+    }
+
+
+    Component.onCompleted: update();
 }
