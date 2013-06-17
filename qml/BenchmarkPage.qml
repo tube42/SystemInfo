@@ -39,7 +39,7 @@ BasicPage {
             width: parent.width
             anchors.bottom: button.top
             anchors.margins: 48
-            maximumLineCount: 3
+            maximumLineCount: 5
             wrapMode: Text.Wrap
 
         }
