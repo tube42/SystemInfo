@@ -14,7 +14,7 @@ Download
 --------
 For the latest stable version, please check the Nokia Store.
 
-Version v0.5.2 for developers is available `Here`_.
+Build v0.5.2 for developers is available `Here`_. If you have the Nokia Store version you must uninstall it first :(
 
  .. _Here: http://tube42.github.io/systeminfo/bin/systeminfo_0.5.2_armel.deb
 
@@ -25,11 +25,14 @@ SystemInfo has a lot of functionality, some useful to many and some to very few.
 Distribute systems logs and more
  .. image:: http://tube42.github.io/systeminfo/img/img02.png
     :align: center
+    :scale: 50 %
 
 Browse all available system fonts
  .. image:: http://tube42.github.io/systeminfo/img/img01.png
     :align: center
+    :scale: 50 %
 
 Examine network statistics
  .. image:: http://tube42.github.io/systeminfo/img/img00.png
     :align: center
+    :scale: 50 %
