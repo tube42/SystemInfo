@@ -25,7 +25,9 @@ Makefile
 obj/
 moc/
 debian
+systeminfo
 
 
 # yes, stupid me
 .svn
+

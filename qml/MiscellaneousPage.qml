@@ -12,8 +12,8 @@ BasicListPage {
 
         ListElement {
             page: "MiscUploadPage.qml"
-            title: "Upload logs"
-            subtitle: "Upload phone logs to pastebin"
+            title: "Logs"
+            subtitle: "Email or upload phone logs"
         }
 
 
@@ -22,14 +22,6 @@ BasicListPage {
             title: "Benchmark"
             subtitle: "Benchmark your device"
         }
-/*
-        ListElement {
-            page: "FileBrowserPage.qml"
-            title: "Files"
-            subtitle: "A MINIMAL file browser"
-        }
-*/
     }
-
 }
 

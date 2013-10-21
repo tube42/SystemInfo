@@ -8,7 +8,7 @@ import "Pastebin.js" as Pastebin
 
 BasicPage {
     id: page
-    title: "Upload logs etc."
+    title: "System logs etc."
     hasBack: !working
 
     property bool working: false
@@ -78,11 +78,11 @@ BasicPage {
                           }
                           );
 
-        }catch(err)
-        {
+        } catch(err) {
             page.working = false;
             page.url = url;
             show_banner("Failed (internal error: " + err + ")");
+            console.log("ERROR", err);
         }
     }
 
@@ -96,7 +96,20 @@ BasicPage {
         var ret = platform.shareUrl(url, title.text);
         if(ret != "") show_banner(ret); // ERROR ?
     }
-
+    
+    function do_email()
+    {
+        try {
+            var title_ = title.text;
+            var text_ = get_requested_logs();
+            var cmd = "mailto:" + "?subject=" + encodeURI(title_) + "&body=" + text_;            
+            Qt.openUrlExternally(cmd);
+        } catch(err) {
+            show_banner("Failed (internal error: " + err + ")");
+            console.log("ERROR", err);            
+        }
+    }
+    
     // -------------------------------------------------------
 
     Flickable {
@@ -115,7 +128,7 @@ BasicPage {
             visible: ! page.working
 
             Label {
-                text: "Upload name"
+                text: "Title"
                 color: theme_.itemFontColor
             }
             TextField {
@@ -187,24 +200,21 @@ BasicPage {
                     checked: true
                 }
             }
-
+            
             Label {
                 color: theme_.itemFontColor
-                text: "Access your paste"
+                text: "Email your logs"
             }
-
+            
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
-                enabled: page.url != "";
-                text: "Open paste in browser"
-                onClicked: page.browse_paste();
-            }
-            Button {
-                anchors.horizontalCenter: parent.horizontalCenter
-                enabled: page.url != "";
-                text: "Share paste url"
-                iconSource: "image://theme/icon-m-toolbar-share"
-                onClicked: page.share_paste();
+                text: "Send by email"
+                onClicked: do_email();
+            }            
+            
+            Label {
+                color: theme_.itemFontColor
+                text: "Upload to pastebin"
             }
 
             Text {
@@ -222,7 +232,22 @@ BasicPage {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Upload to pastebin"
                 onClicked: do_upload_pastebin();
+            }            
+            
+            Button {
+                anchors.horizontalCenter: parent.horizontalCenter
+                enabled: page.url != "";
+                text: "Open paste in browser"
+                onClicked: page.browse_paste();
             }
+            
+            Button {
+                anchors.horizontalCenter: parent.horizontalCenter
+                enabled: page.url != "";
+                text: "Share paste url"
+                iconSource: "image://theme/icon-m-toolbar-share"
+                onClicked: page.share_paste();
+            }            
         }
     }
 

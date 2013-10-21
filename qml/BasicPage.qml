@@ -31,18 +31,17 @@ Page {
 
     }
 
-
+    
     // place holder for user lists
     Item {
         id: usercanvas
-
         anchors.left:  parent.left
         anchors.right:  parent.right
         anchors.top:  titleTextBackground.bottom
         anchors.bottom:  parent.bottom
         anchors.margins: theme_.defaultMargin
     }
-
+    
     Rectangle {
         id: titleTextBackground
         width: parent.width
@@ -50,7 +49,7 @@ Page {
 
         x: 0
         y: 0
-        z: 1 // above everything else
+        z: 2 // above everything else
         color: theme_.pageTitleAreaColor
 //        visible: titletext.visible
 
@@ -65,7 +64,7 @@ Page {
             color: theme_.pageTitleFontColor
             // font.bold: true;
             visible: text != ""
-        }
-    }
+        }        
+    }       
 }
 

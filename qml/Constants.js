@@ -1,5 +1,5 @@
 
-var APP_VERSION = "0.5.2"
+var APP_VERSION = "0.5.3"
 var APP_ABOUT_LINK = ""
 var APP_ABOUT_TEXT =  "System Info (beta release)" +
     "<p>Version " + APP_VERSION + "\n" +

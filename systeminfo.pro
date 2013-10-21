@@ -38,59 +38,12 @@ SOURCES += cpp/main.cpp \
 
 
 OTHER_FILES += \
-    qml/MainPage.qml \
-    qml/main.qml \
+    qml/*.qml \
+    qml/*.png \
+    qml/*.js \
     systeminfo.desktop \
     systeminfo.svg \
     systeminfo.png \
-    qml/MainListPage.qml \
-    qml/main.qml \
-    qml/DeviceUnitInfo.qml \
-    qml/DeviceScreenInfo.qml \
-    qml/DeviceInfo.qml \
-    qml/DeviceBatteryInfo.qml \
-    qml/ConfigurationSyncInfo.qml \
-    qml/ConfigurationNetworkInfo.qml \
-    qml/ConfigurationInfo.qml \
-    qml/BasicPage.qml \
-    qml/BasicListPage.qml \
-    qml/BasicDataPage.qml \
-    qml/About.qml \
-    qml/Constants.js \
-    qml/MainListPage.qml \
-    qml/main.qml \
-    qml/Logic.js \
-    qml/Helper.js \
-    qml/DeviceUnitInfo.qml \
-    qml/DeviceScreenInfo.qml \
-    qml/DeviceInfo.qml \
-    qml/DeviceBatteryInfo.qml \
-    qml/Constants.js \
-    qml/ConfigurationSyncInfo.qml \
-    qml/ConfigurationNetworkInfo.qml \
-    qml/ConfigurationInfo.qml \
-    qml/BasicPage.qml \
-    qml/BasicListPage.qml \
-    qml/BasicDataPage.qml \
-    qml/About.qml \
-    qml/Splash.qml \
-    qml/DeviceCpuInfo.qml \
-    qml/DeviceSensorInfo.qml \
-    qml/ConfigurationVersionInfo.qml \
-    qml/BenchmarkPage.qml \
-    qml/Harmattan/UserTheme.qml \
-    qml/Benchmark.js \
-    qml/BenchmarkItem.qml \
-    qml/FileBrowserPage.qml \
-    qml/MiscellaneousPage.qml \
-    qml/ConfigurationQmlInfo.qml \
-    qml/ConfigurationFontInfo.qml \
-    qml/ConfigurationServiceInfo.qml \
-    qml/DataDelegate.qml \
-    qml/DataSectionDelegate.qml \
-    qml/MiscellaneousPage.qml \
-    qml/MiscUploadPage.qml \
-    qml/Pastebin.js \
     qtc_packaging/debian_harmattan/rules \
     qtc_packaging/debian_harmattan/README \
     qtc_packaging/debian_harmattan/manifest.aegis \

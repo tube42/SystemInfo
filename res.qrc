@@ -22,7 +22,6 @@
         <file>qml/BenchmarkPage.qml</file>
         <file>qml/Benchmark.js</file>
         <file>qml/BenchmarkItem.qml</file>
-        <file>qml/FileBrowserPage.qml</file>
         <file>qml/MiscellaneousPage.qml</file>
         <file>qml/ConfigurationQmlInfo.qml</file>
         <file>qml/ConfigurationFontInfo.qml</file>
