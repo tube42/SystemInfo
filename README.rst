@@ -14,9 +14,9 @@ Download
 --------
 For the latest stable version, please check the Nokia Store.
 
-Build v0.5.3 for developers is available `Here`_. If you have the Nokia Store version you must uninstall it first :(
+Build v0.5.4 for developers is available `Here`_. If you have the Nokia Store version you must uninstall it first :(
 
- .. _Here: http://tube42.github.io/systeminfo/bin/systeminfo_0.5.3_armel.deb
+ .. _Here: http://tube42.github.io/systeminfo/bin/systeminfo_0.5.4_armel.deb
 
 Screenshots
 -----------

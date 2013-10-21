@@ -52,22 +52,27 @@ BasicDataPage {
         append("Power state", Helper.select(Helper.POWER_STATE_NAMES, devinfo.currentPowerState));
 
         append("Battery capacity (current/max)",
-               "" + batInfo.remainingCapacity + "/" + batInfo.nominalCapacity  +" mAh");
+               batInfo.remainingCapacity > 0.5 && batInfo.nominalCapacity > 0.5 ? 
+               "" + batInfo.remainingCapacity + "/" + batInfo.nominalCapacity  +" mAh" :
+               "Not available on this device");
 
 //        append("Battery nominal capacity", "" + batInfo.nominalCapacity  +" mAh");
 //        append("Battery remaining capacity", "" + batInfo.remainingCapacity  +" mAh");
 
 
         var rct = batInfo.remainingChargingTime;
-        if(rct === 0)
+        if(rct === 0) {
             append("Remaining charge time", "already fully charged!");
 //        else if(rct === -1)
 //            append("Remaining charge time", "no battery found :(");
-        else if(rct > 0)
+        } else if(rct > 0) {
             append("Remaining charge time", "" + batInfo.remainingChargingTime  +" s");
-
-        append("Current flow", "" + batInfo.currentFlow +" mA");
-        append("Voltage", "" + batInfo.voltage +" mV");
+        }
+        
+        append("Current flow", "" + batInfo.currentFlow +" mA");            
+        append("Voltage", batInfo.voltage > 0.5 ? 
+               ("" + batInfo.voltage +" mV") : 
+               "Not available on this device");
     }
 
 

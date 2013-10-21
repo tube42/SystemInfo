@@ -209,6 +209,7 @@ BasicPage {
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Send by email"
+                enabled: !muchAll.checked
                 onClicked: do_email();
             }            
             

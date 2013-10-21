@@ -1,19 +1,20 @@
 
-var APP_VERSION = "0.5.3"
-var APP_ABOUT_LINK = ""
-var APP_ABOUT_TEXT =  "System Info (beta release)" +
+var APP_VERSION = "0.5.4";
+var APP_ABOUT_LINK = "";
+var APP_ABOUT_TEXT =  "<h2>System Info (beta release)</h2>" +
     "<p>Version " + APP_VERSION + "\n" +
-    "<p>by TUBE42 - <a href=\"mailto:av@tube42.se\">av@tube42.se</a>, " +
-    "<a href=\"https://twitter.com/tube42\">@tube42</a> " +
+    "<p>by TUBE42 - <a href=\"https://twitter.com/tube42\">@tube42</a> " +
     "<p><br>" +
-    "<p>SystemInfo is a tiny utility for examining various aspects of your MeeGo/Harmattan device. " +
-    "It is primarily used by developers and modders, but can also be of use to normal users " +
-    "who experience problems with their device or want to know more about MeeGo and Harmattan."+
+    "<h3>What is it?</h3>" +
+    "<p>SystemInfo is a tiny utility for examining various aspects of your N9/N950 device. " +
+    "It is primarily used by developers and modders, but can also be of use to normal users "  +
+    "who experience problems with their device or want to know more about MeeGo and Harmattan." +
     "<p><br>" +
-    "<p>The QML source code is available at " +
+    "<h3>Get involved!</h3>"+
+    "<p>QML source code for this app is available at " +
     "<a href=\"https://github.com/tube42/SystemInfo\">GitHub</a>"+
     " under the GPLv3 license. " +
-    "Please contact the author via <a href=\"https://twitter.com/tube42\">twitter</a> to suggest improvements, request features and report bugs."
+    "<p>Please contact the author via <a href=\"https://twitter.com/tube42\">twitter</a> to suggest improvements, request features and report bugs.";
 
 // -----------------------------------------
 
