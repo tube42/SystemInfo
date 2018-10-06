@@ -23,16 +23,16 @@ Screenshots
 SystemInfo has a lot of functionality, some useful to many and some to very few. The below screenshots show some different parts of this app
 
 Distribute systems logs and more
- .. image:: http://tube42.github.io/systeminfo/img/img02.png
+ .. image:: doc/img02.png
     :align: center
     :scale: 50 %
 
 Browse all available system fonts
- .. image:: http://tube42.github.io/systeminfo/img/img01.png
+ .. image:: doc/img01.png
     :align: center
     :scale: 50 %
 
 Examine network statistics
- .. image:: http://tube42.github.io/systeminfo/img/img00.png
+ .. image:: doc/img00.png
     :align: center
     :scale: 50 %
